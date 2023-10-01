@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/f4b34261d0.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+   <div id="header">
+        <nav>
+            <img src="\images\logo.jpeg" class="logo">
+            <ul>
+                <li><a href="#index">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <section class="details">
+        <h1>Hi, I'm <span>Renuka</span> Rimal .</h1>
+        <p>This is my official portfolio website for showcasing<br>My skills,projects and resume.</p>
+        <a href="/images/Renuka's Resume.pdf" download class="btn ">Download Resume</a>
+    </section>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="\images\about me.jpg">
+                </div> 
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="info">Hi, my name is Renuka Rimal, a third year student pursuing bachelor of enigineering in computer science and engineering from new horizon college of engineering.I'm a tech enthusiast, driven by a deep passion for innovation and a burning desire to make my mark in the dynamic realm of technology. Within the pages of this portfolio, I am excited to unfold my educational journey, showcase my burgeoning skills, and reveal the aspirations that fuel my journey as a tech student.</p>
+                    <p class="info"><br>As a tech student, I am dedicated to staying at the forefront of technology trends and continually expanding my skillset. I am eager to embark on a career in technology, where I can apply my knowledge and creativity to create meaningful solutions. I am open to new opportunities and collaborations that allow me to contribute to the tech industry's growth and innovation. Please feel free to reach out to discuss potential collaborations or opportunities for me to contribute to your tech initiatives.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links active-link"onclick="opentab('education')">EDUCATION</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>web Development</li>
+                            <li>JavaScript</li>
+                            <li>php</li>
+                            <li><span>Programming Languages</span><br>C<br>python<br>java</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>ONGOING</span><br>B.E. in Computer Science And Engineering at New Horizon College Of Engineering,Bangaluru</li>
+                            <li><span>2019-2021</span><br>completed 11th and 12th from Gopalan PU College,Bangaluru</li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+    </div>
+
+    <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Project 1-Online Movie Booking Platform</h3>
+                <p>The "Film Flare" movie booking website offers a unique and immersive platform for movie 
+                    enthusiasts. It goes beyond traditional booking systems by integrating movies, events, and 
+                    interaction with administrators. Users can effortlessly explore a curated selection of films, from 
+                    classics to blockbusters, presented in elegant "movie boxes." Booking seats is made simple 
+                    with an intuitive process, and the site also highlights exciting upcoming events like movie 
+                    marathons and premieres. The "Contact Us" section enables direct communication with 
+                    administrators, fostering a sense of community. "Film Flare" is more than a platform; it's an 
+                    experience that combines cinema, technology, and engagement, transforming movie booking 
+                    into a journey of discovery and connection. </p>
+                <img src="/images/IMG1.jpeg" alt="">
+                <div class="project-links">
+                    <a href="/images/IMG1.jpeg" target="_blank">View Demo</a>
+                    <a href="/images/project1.pdf" target="_blank">Source Code</a>
+                </div>
+                    <h3><br><br>Project 2-closet organizer</h3>
+                    <p>Create an intuitive calculator app with a clean interface, responsive real-time feedback, and support for basic arithmetic operations and decimal numbers. Design it attractively for a broad user base, from students to professionals, to meet everyday math needs seamlessly.Create a clean calculator interface with buttons and a text field. Implement action listeners for user input. Handle numbers and decimals, support basic arithmetic operations, provide real-time feedback, and enable a clear function.  </p>
+                    <div class="project-links">
+                        <a href="/images/picture 2.jpg" target="_blank">View Demo</a>
+                        <a href="/images/project 2.pdf" target="_blank">Source Code</a>
+                    </div>
+            </div>
+    </section>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>  contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>  7406511483</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/renuka-rimal-323317271/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="Name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>        
+    </div>
+   
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz767WcPiS216DBB75Qeo-lcYtQVnKIo1XD5UQvrrNf8urVBfW_oEISwgWLsDG3isGS/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML= "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML =""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>

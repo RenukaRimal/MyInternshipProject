@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; 
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: white;
+    color:#080808;
+}
+#header {
+    padding: 5px 5%;
+    background-color: orange;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width:110px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:#080808;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height:3px;
+    background:red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+
+.details {
+    margin-top: 20%;
+    font-size: 30px;
+    padding-left: 20%;
+    padding-bottom: 20%;
+}
+
+.details h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+.details h1 span{
+    color:red;
+}
+.details p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.btn{
+    border: 2px solid black;
+    color:black;
+    padding: 5px 10px 5px 10px ;
+    text-align: center; 
+    display:inline-block;
+    background-color:orange;
+    font-size:30px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 50px;
+}
+
+#about{
+    padding: 100px 0;
+    color:#262626;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 30%;
+}
+.about-col-1 img{
+  width: 100%; 
+  border-radius: 30px; 
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight:600;
+    color: black;
+    margin-bottom: 10%;
+    background: orange;
+}
+.info{
+    font-size: 18px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px; 
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height:3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition:0.5s;
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+.tab-contents ul li{
+   list-style: none;
+   margin: 10px 0; 
+}
+.tab-contents ul li span{
+    color:#b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display:block;
+}
+.portfolio {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.portfolio h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    border: 1px solid orange;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    font-size: 25px;
+    color: black;
+}
+
+.project-card p {
+    font-size: 20px;
+    line-height: 1.5;
+    color:black;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-links {
+    margin-top:20px;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 16px;
+    background-color:#ff004f;
+    color:#080808;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.project-links a:hover {
+    background-color: #555;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color:#ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display:inline-block;
+    transition:transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+
+}
+
+.contact-right form{
+    width:100%;
+}
+form input,form textarea{
+    width:100%;
+    border:0;
+    outline:none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 19px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#msg{
+    color:#ff004f;
+    display: block;
+}
