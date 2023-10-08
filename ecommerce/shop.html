@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4b34261d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+               <img src="/logo2.jpeg" alt="" width="100px" height="80px">
+            </div>
+
+            <ul>
+                <a href="shop.html">Home</a>
+                <a id="cloths" href="#cloth">Cloths</a>
+                <a id="cart" href="cart.html">View Cart (<span class="cart-count">0</span>)</a>
+                <a id="reviews" href="#review">Review</a>
+                <a id="contacts" href="#contact">Contact Us</a>
+                <button id="login">Log In</button>
+
+            </ul>
+        </nav>
+
+        <div class="loginPage">
+            <input type="text" placeholder="Enter Email" id="email">
+            <input type="password" placeholder="Enter pass" id="pass">
+            <button id="loged">Log In</button>
+        </div>
+
+        <div class="main">
+            <div class="mainText">
+                <h1>Amazing Discounts and Special Offers</h1>
+                <h2>Unlock a World of Chic and Affordable Clothing</h2>
+                <p>Welcome to a Fashion Wonderland, Where Every Stitch Weaves a Tale. Unleash Your Inner Style Icon, Dive into the Latest Trends, and Craft Your Unique Fashion Journey with Us. Elevate Your Wardrobe, One Exquisite Piece at a Time.</p>
+                <button>Explore</button>
+            </div>
+            <img src="/img.jpg" alt="">
+        </div>
+
+        <!-- cloths -->
+        <div class="cloth" id="cloth">
+            <div class="head">
+                <h1>Chic & Timeless:<span> Discover Our Women's Wear Collection!</span></h1>
+            </div>
+
+            <div class="card">
+                <div class="trend">
+                    <img src="/womenwear3.jpg" alt="">
+                    <div class="cardText">
+                        <p>Black And White Striper Top</p>
+                        <select>
+                            <option >Select Size</option>
+                            <option >XXL</option>
+                            <option >XL</option>
+                            <option >Large</option>
+                            <option >Medium</option>
+                            <option >Small</option>
+                        </select>
+                        <h2><i class="fa-solid fa-indian-rupee-sign"></i> 700.00</h2>
+                        <button class="add-to-cart" data-name="Black And White Striper Top" data-price="700.00">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="trend">
+                    <img src="/img5.jpeg" alt="">
+                    <div class="cardText">
+                        <p>Pure Cotton Kurti Causal Wear, Office Wear for Women/Girls Kurti</p>
+                        <select>
+                            <option >Select Size</option>
+                            <option >XXL</option>
+                            <option >XL</option>
+                            <option >Large</option>
+                            <option >Medium</option>
+                            <option >Small</option>
+                        </select>
+                        <h2><i class="fa-solid fa-indian-rupee-sign"></i> 900.00 Only</h2>
+                        <button class="add-to-cart" data-name="Pure Cotton Kurti Causal Wear, Office Wear for Women/Girls Kurti" data-price="900.00">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="trend">
+                    <img src="/womenwear1.jpg" alt="">
+                    <div class="cardText">
+                        <p>Pure Cotton Floral Printed Kurta & Pant</p>
+                        <select>
+                            <option >Select Size</option>
+                            <option >XXL</option>
+                            <option >XL</option>
+                            <option >Large</option>
+                            <option >Medium</option>
+                            <option >Small</option>
+                        </select>
+                        <h2><i class="fa-solid fa-indian-rupee-sign"></i> 500.00 Only</h2>
+                        <button class="add-to-cart" data-name="Pure Cotton Floral Printed Kurta & Pant<" data-price="500.00">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+
+        <!-- cloths -->
+        <div class="cloth">
+            <div class="head">
+                <h1>Elevate Your Style:<span>Explore Our Men's Wear Collection!</span></h1>
+            </div>
+
+            <div class="card">
+                <div class="trend">
+                    <img src="/menimg1.jpeg" alt="">
+                    <div class="cardText">
+                        <p>Denim Jacket with Pockets</p>
+                        <select>
+                            <option >Select Size</option>
+                            <option >XXL</option>
+                            <option >XL</option>
+                            <option >Large</option>
+                            <option >Medium</option>
+                            <option >Small</option>
+                        </select>
+                        <h2><i class="fa-solid fa-indian-rupee-sign"></i> 1012.00 Only</h2>
+                        <button class="add-to-cart" data-name="Heavily Washed Denim Jacket with Pockets" data-price="1012.00">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="trend">
+                    <img src="menimg2.jpeg" alt="">
+                    <div class="cardText">
+                        <p>Slim Fit Flat-Front Trousers</p>
+                        <select>
+                            <option >Select Size</option>
+                            <option >XXL</option>
+                            <option >XL</option>
+                            <option >Large</option>
+                            <option >Medium</option>
+                            <option >Small</option>
+                        </select>
+                        <h2><i class="fa-solid fa-indian-rupee-sign"></i> 1600.00 Only</h2>
+                        <button class="add-to-cart" data-name="Slim Fit Flat-Front Trousers with Slip Pockets" data-price="1600.00">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="trend">
+                    <img src="/menimg3.jpeg" alt="">
+                    <div class="cardText">
+                        <p>Slim Fit Shirt with Patch Pocket</p>
+                        <select>
+                            <option >Select Size</option>
+                            <option >XXL</option>
+                            <option >XL</option>
+                            <option >Large</option>
+                            <option >Medium</option>
+                            <option >Small</option>
+                        </select>
+                        <h2><i class="fa-solid fa-indian-rupee-sign"></i> 900.00 Only</h2>
+                        <button class="add-to-cart" data-name="Men Slim Fit Shirt with Patch Pocket" data-price="900.00">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- cloths -->
+         <div class="cloth">
+            <div class="head">
+                <h1>Kids' Fashion Wonderland: <span>Discover the Latest Trends!</span></h1>
+            </div>
+
+            <div class="card">
+                <div class="trend">
+                    <img src="/kidswearimg2.jpeg" alt="">
+                    <div class="cardText">
+                        <p>Real Basics unisex child fleece Track Suit</p>
+                        <select>
+                            <option >Select Size</option>
+                            <option >XXL</option>
+                            <option >XL</option>
+                            <option >Large</option>
+                            <option >Medium</option>
+                            <option >Small</option>
+                        </select>
+                        <h2><i class="fa-solid fa-indian-rupee-sign"></i> 750.00 Only</h2>
+                        <button class="add-to-cart" data-name="Real Basics unisex child fleece Track Suit" data-price="750.00">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="trend">
+                    <img src="/kidswear2.jpeg" alt="">
+                    <div class="cardText">
+                        <p>Baby Girls Cotton Silk Dress </p>
+                        <select>
+                            <option >Select Size</option>
+                            <option >XXL</option>
+                            <option >XL</option>
+                            <option >Large</option>
+                            <option >Medium</option>
+                            <option >Small</option>
+                        </select>
+                        <h2><i class="fa-solid fa-indian-rupee-sign"></i> 1024.00 Only</h2>
+                        <button class="add-to-cart" data-name="Baby Girls Cotton Silk Dress" data-price="1024.00">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="trend">
+                    <img src="/kidswearimg3.jpeg" alt="">
+                    <div class="cardText">
+                        <p>Baby's Cotton Tshirt Pant Set</p>
+                        <select>
+                            <option >Select Size</option>
+                            <option >XXL</option>
+                            <option >XL</option>
+                            <option >Large</option>
+                            <option >Medium</option>
+                            <option >Small</option>
+                        </select>
+                        <h2><i class="fa-solid fa-indian-rupee-sign"></i> 1500.00 Only</h2>
+                        <button class="add-to-cart" data-name="Baby's Cotton Tshirt Pant Set" data-price="1500.00">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- review -->
+
+        <div class="review" id="review">
+            <div class="head">
+                <h1>Customer <span>Review</span></h1>
+                <div class="customer">
+                    <div class="review">
+                        <h>Veronica<br>Boston MA, USA</h>
+                        <p>"I'm thrilled with my recent purchase from Shopping Cart! The quality of the clothing is outstanding, and the prices are unbeatable. I'm definitely coming back for more."</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="review">
+                        <h>Vicky<br>Radcliff, Kentucky USA</h>
+                        <p>Great selection of trendy clothes! The checkout process was a breeze, and my order arrived faster than expected. </p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="review">
+                        <h>Bernice Levy<br>Staten Island New York</h>
+                        <p>I'm impressed with the quality of the clothing. The fabrics are comfortable, and the stitching is solid. My only suggestion would be to expand the men's collection.</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+
+
+        <div class="contact" id="contact">
+            <div class="head">
+                <h1>Contact <span>Us</span></h1>
+            </div>
+
+            <div class="contactPage">
+                <input type="text" placeholder="Enter Your Name" id="name"> <br>
+                <input type="password" placeholder="Enter Your password" id="pass"> <br>
+                <button id="submit">Submit</button>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+
+        <div class="footer">
+            <div class="text">
+                <h2>About US</h2>
+                <p>Discover affordable, stylish fashion for all at Shopping Cart.We're dedicated <br>to quality and top-notch service, making your shopping experience effortless.<br> From everyday wear to special occasions, find your style with us.<br> <br>Thank you for choosing Shopping Cart as your fashion destination!</p>
+            </div>
+            <div class="text">
+                <h2>Product</h2>
+                <p>Design</p>
+                <p>Selection</p>
+                <p>Best price</p>
+                <p>Quality</p>
+                 
+
+            </div>
+            <div class="text">
+                <h2>Quality</h2>
+                <p>Excellence</p>
+                <p>Perfection</p>
+                <p>Superiority</p>
+                <p>Service</p>
+                <p>Review</p>
+                <p>Offers</p>
+
+            </div>
+            <div class="text">
+                <h2>Adress</h2>
+                <p>Marathalli</p>
+                <p>Bangalore</p>
+                 
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

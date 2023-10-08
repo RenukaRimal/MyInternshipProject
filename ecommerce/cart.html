@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4b34261d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <h1>Shopping Cart</h1>
+            </div>
+
+            <ul>
+                <a href="shop.html">Home</a>
+                <a id="cloths" href="#cloth">Cloths</a>
+                <a id="cart" href="cart.html">View Cart<i class="fa-solid fa-cart-shopping"></i></a>
+                <a id="reviews" href="#review">Review</a>
+                <a id="contacts" href="#contact">Contact Us</a>
+                <button id="login">Log In</button>
+
+            </ul>
+        </nav>
+        <div class="loginPage">
+            <input type="text" placeholder="Enter Email" id="email">
+            <input type="password" placeholder="Enter pass" id="pass">
+            <button id="loged">Log In</button>
+        </div>
+    </div>
+<!--cart items details----->
+<h1>Shopping Cart</h1>
+<div class="small-container cart-page">
+    <table>
+        <tr>
+            <th>product</th>
+            <th>Quantity</th>
+            <th>subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/kidswear2.jpeg">
+                    <div>
+                        <p>Baby Girls Cotton Silk Dress</p>
+                        <small> Price: <i class="fa-solid fa-indian-rupee-sign"></i> 1024.00 Only</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type= type="number" value="1"</td>
+            <td><i class="fa-solid fa-indian-rupee-sign"></i> 1024.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="/menimg2.jpeg">
+                    <div>
+                        <p>Slim Fit Flat-Front Trousers with Slip Pockets</p>
+                        <small> Price:<i class="fa-solid fa-indian-rupee-sign"></i> 1600.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type= type="number" value="1"</td>
+            <td><i class="fa-solid fa-indian-rupee-sign"></i> 1600.00</td>
+        </tr>
+    </table>
+    <div class ="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td><i class="fa-solid fa-indian-rupee-sign"></i> 4000.00</td>
+            </tr>
+            <tr>
+                <td>Delivery Charges</td>
+                <td><i class="fa-solid fa-indian-rupee-sign"></i> 200.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td><i class="fa-solid fa-indian-rupee-sign"></i>4200.00</td>
+            </tr>
+            </table>
+            </div>
+    </div>
+
+        
+        <!-- footer -->
+
+        <div class="footer">
+            <div class="text">
+                <h2>About US</h2>
+                <p>Discover affordable, stylish fashion for all at Shopping Cart.We're dedicated <br>to quality and top-notch service, making your shopping experience effortless.<br> From everyday wear to special occasions, find your style with us.<br> <br>Thank you for choosing Shopping Cart as your fashion destination!</p>
+            </div>
+            <div class="text">
+                <h2>Product</h2>
+                <p>Design</p>
+                <p>Selection</p>
+                <p>Best price</p>
+                <p>Quality</p>
+                 
+
+            </div>
+            <div class="text">
+                <h2>Quality</h2>
+                <p>Excellence</p>
+                <p>Perfection</p>
+                <p>Superiority</p>
+                <p>Service</p>
+                <p>Review</p>
+                <p>Offers</p>
+
+            </div>
+            <div class="text">
+                <h2>Adress</h2>
+                <p>Marathalli</p>
+                <p>Bangalore</p>
+                 
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+    displayCartItems(); // Display cart items when the cart page loads
+    </script>
+</body>
+</html>
+
