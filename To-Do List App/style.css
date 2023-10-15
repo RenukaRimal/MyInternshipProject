@@ -1,0 +1,90 @@
+body {
+    font-family: 'Poppians', sans-serif;
+    background: linear-gradient(to top right, pink 50%,paleturquoise 50%);
+    margin: 0;
+    padding: 100px;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:#0ef59c;
+    border: 2px solid black;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.task-container {
+    margin-top: 20px;
+    width: 300px;
+    padding: 8px;
+    border: 2px;
+    outline: none;
+
+}
+#task {
+    width: 270px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border: 1px solid black;
+    outline: none;
+}
+
+#add-task {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+#add-task:hover {
+    background-color: #0056b3;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+i.fa-edit {
+    color: #007bff; 
+    cursor: pointer; 
+    margin-right: 5px; 
+}
+
+.toggle-button {
+    cursor: pointer; 
+    margin-right: 5px; 
+}
+
+.delete-button {
+    background-color: #FF3B30;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-button:hover {
+    background-color: #d42017;
+}
